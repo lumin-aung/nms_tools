@@ -12,7 +12,7 @@ sudo cp -r consoles /etc/prometheus
 sudo cp -r console_libraries /etc/prometheus
 sudo chown -R prometheus:prometheus /etc/prometheus/consoles
 sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
-sudo cp prometheus.yaml /etc/prometheus/prometheus.yml
+sudo cp prometheus.yml /etc/prometheus/prometheus.yml
 sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml
 sudo touch /etc/systemd/system/prometheus.service
 cat > /etc/systemd/system/prometheus.service <<- EOF
